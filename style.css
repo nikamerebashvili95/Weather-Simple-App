@@ -84,3 +84,132 @@ a {
 a:hover {
   color: var(--p-tint-90);
 }
+/* ================================================= */
+/* Forms */
+/* ================================================= */
+form {
+  width: 100%;
+  max-width: 30rem;
+  margin-bottom: 2rem;
+}
+label {
+  margin-bottom: 0.5rem;
+  display: block;
+}
+input {
+  border-radius: var(--global-border-radius);
+  border: 0;
+}
+input[type="text"] {
+  height: 2.75rem;
+  background: var(--p-shade-30) url("img/search.svg") 0.75rem center no-repeat;
+  color: var(--p-tint-90);
+  padding-left: 2.25rem;
+  outline: none;
+  flex-grow: 1;
+  transition: var(--global-transition);
+}
+input:focus,
+input:hover {
+  background-color: var(--p-shade-50);
+}
+input::placeholder {
+  color: var(--p-tint-40);
+}
+.form-row {
+  display: flex;
+  gap: 0.5rem;
+}
+form button {
+  width: 2.75rem;
+  height: 2.75rem;
+  background-color: var(--secondary);
+  border-radius: var(--global-border-radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  transition: var(--global-transition);
+}
+form button:hover {
+  background-color: var(--p-shade-80);
+}
+form button:active {
+  background-color: var(--p-shade-50);
+}
+.form-msg {
+  background-color: var(--p-shade-20);
+  padding: 0.5rem 1rem;
+  border-radius: 0 0 var(--global-border-radius) var(--global-border-radius);
+  margin-left: 0.75rem;
+  width: 75%;
+  transform: translate3d(0, -100%, 0);
+  opacity: 0;
+  z-index: -1;
+  position: relative;
+  transition: var(--global-transition);
+}
+.form-msg.visible {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+
+/* ================================================= */
+/* Cities */
+/* ================================================= */
+.cities {
+  display: grid;
+  padding: 0;
+  list-style: none;
+  gap: 2rem;
+  margin: 0 0 4rem;
+}
+.cities li {
+  display: flex;
+  gap: 1.5rem;
+  background-color: white;
+  align-items: center;
+  padding: 1.5rem;
+  color: var(--p-shade-80);
+  border-radius: var(--global-border-radius);
+  box-shadow: 8px 8px 8px rgb(255, 255, 255, 0.08);
+}
+.city__conditions {
+  color: var(--p-tint-40);
+  margin-bottom: 1rem;
+}
+.city__country {
+  color: white;
+  background-color: var(--tertiary);
+  border-radius: var(--global-border-radius);
+  padding: 0.125rem 0.25rem;
+  margin-left: 0.5rem;
+}
+/* ================================================= */
+/* 560px+ */
+/* ================================================= */
+@media screen and (min-width: 560px) {
+  .cities {
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  }
+  .cities li {
+    flex-direction: column;
+    text-align: center;
+  }
+  .city__conditions {
+    margin-bottom: 1.5rem;
+  }
+}
+/* ================================================= */
+/* 768px+ */
+/* ================================================= */
+@media screen and (min-width: 768px) {
+  .notification {
+    padding: 0.5rem 4rem;
+  }
+
+  .container {
+    padding: 4rem;
+  }
+}
