@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Simple Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Add location</h1>
+        <form action="" id="seatch-form">
+          <label for="search-term">Search the city or area</label>
+          <div class="form-row">
+            <input
+              type="text"
+              placeholder="e.g. Barcelona"
+              name="search-term"
+              id="search-term"
+              autofocus
+            />
+            <button type="submit">
+              <img src="img/plus-circle.svg" alt="Plus circle" />
+            </button>
+          </div>
+          <p class="form-msg"></p>
+        </form>
+      </header>
+      <section>
+        <ul class="cities">
+          <li>
+            <figure>
+              <img src="img/weather/01d.svg" alt="Demo" />
+            </figure>
+            <div>
+              <h2>21<sup>°C</sup></h2>
+              <p class="city__conditions">SUNNY</p>
+              <h3>
+                <span class="city__name">Athens</span
+                ><span class="city__country">GR</span>
+              </h3>
+            </div>
+          </li>
+          <li>
+            <figure>
+              <img src="img/weather/01d.svg" alt="Demo" />
+            </figure>
+            <div>
+              <h2>21<sup>°C</sup></h2>
+              <p class="city__conditions">SUNNY</p>
+              <h3>
+                <span class="city__name">Athens</span
+                ><span class="city__country">GR</span>
+              </h3>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </body>
+</html>

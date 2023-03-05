@@ -1,0 +1,86 @@
+/* ================================================= */
+/* Custom properties */
+/* ================================================= */
+:root {
+  --body-font: "Figtree", sans-serif;
+
+  --p-shade-80: #050b12;
+  --p-shade-50: #0e1b2d;
+  --p-shade-30: #13263e;
+  --p-shade-20: #162b47;
+  --primary: #1b3659;
+  --p-tint-40: #76869b;
+  --p-tint-90: #e8ebee;
+  --secondary: #efa00b;
+  --tertiary: #03b5aa;
+
+  --global-border-radius: 4px;
+  --global-transition: all 0.2s ease-in-out;
+}
+/* ============================================================ */
+/* General styles */
+/* ============================================================ */
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--body-font);
+  background-color: var(--primary);
+  color: var(--p-tint-90);
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  padding: 4rem 2rem;
+}
+/* ================================================= */
+/* Typography */
+/* ================================================= */
+p {
+  margin: 0 0 1.5rem;
+}
+
+h1 {
+  font-size: 2.375rem;
+  line-height: 1.25;
+  margin: 0 0 2rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+  line-height: 1.15;
+  margin: 0 0 0.5rem;
+}
+
+h3 {
+  font-size: 1rem;
+  line-height: 1.25;
+  margin: 0;
+}
+
+small,
+.form-msg,
+.city__country {
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
+
+a {
+  color: var(--secondary);
+  text-decoration: none;
+  transition: var(--global-transition);
+}
+
+a:hover {
+  color: var(--p-tint-90);
+}
